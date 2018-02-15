@@ -14,9 +14,6 @@ RUN cd / \
     && npm update \
     && npm install
 
-RUN cd /asofe_pool/scripts \
-    && gcc blocknotify.c -o blocknotify
-
 WORKDIR /asofe_pool
 
 EXPOSE 8080
