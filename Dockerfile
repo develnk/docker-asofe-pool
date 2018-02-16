@@ -16,5 +16,5 @@ RUN cd / \
 
 WORKDIR /asofe_pool
 
-EXPOSE 8080
+EXPOSE 8080 17117
 CMD ["npm", "start"]
