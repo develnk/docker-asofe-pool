@@ -6,7 +6,7 @@ RUN apt-get update
 RUN apt-get upgrade -y
 RUN apt-get install -y curl git build-essential gcc libsodium-dev
 
-RUN RUN curl -sL https://deb.nodesource.com/setup_8.x | bash -
+RUN curl -sL https://deb.nodesource.com/setup_8.x | bash -
 RUN apt-get install -y nodejs npm
 
 RUN npm install n -g \
