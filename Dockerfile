@@ -4,7 +4,11 @@ MAINTAINER Asofe Pool "develnk@gmail.com"
 RUN sed 's/main$/main universe/' -i /etc/apt/sources.list
 RUN apt-get update
 RUN apt-get upgrade -y
-RUN apt-get install -y curl git nodejs build-essential gcc libsodium-dev npm
+RUN apt-get install -y curl git build-essential gcc libsodium-dev
+
+RUN RUN curl -sL https://deb.nodesource.com/setup_8.x | bash -
+RUN apt-get install -y nodejs npm
+
 RUN npm install n -g \
     && n stable
 
