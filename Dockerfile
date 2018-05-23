@@ -10,7 +10,7 @@ RUN curl -sL https://deb.nodesource.com/setup_8.x | bash -
 RUN apt-get install -y nodejs
 
 RUN npm install n -g \
-    && n stable
+    && n v8.9.4
 
 RUN cd / \
     && git clone https://github.com/TheLightSide/asofe_pool.git \
